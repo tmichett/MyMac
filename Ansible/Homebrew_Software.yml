@@ -1,0 +1,8 @@
+---
+- name: Setup Homebrew and Software
+  hosts: localhost
+  tasks:
+    - name: Install Asciidoctor
+      homebrew: 
+        name: asciidoctor
+        state: present
