@@ -2,7 +2,17 @@
 - name: Setup Homebrew and Software
   hosts: localhost
   tasks:
-    - name: Install Asciidoctor
+    - name: Register Package List
+      command: awk '{print $1}' Brew_Packages.txt
+      register: _pkgs
+      delegate_to: localhost
+      run_once: true
+
+    - name: List Packages to be installed$
+      debug:$
+        var: _pkgs
+
+    - name: Install Packages
       homebrew: 
-        name: asciidoctor
+        name: "{{ _pkgs.stdout_lines }}"
         state: present
