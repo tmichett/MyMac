@@ -22,3 +22,4 @@ https://mariushosting.com/how-to-install-hoobs-on-your-synology-nas/
 
 https://mariushosting.com/synology-how-to-add-wildcard-certificate/
 
+List of all packages installed using Homebrew - https://apple.stackexchange.com/questions/101090/list-of-all-packages-installed-using-homebrew
