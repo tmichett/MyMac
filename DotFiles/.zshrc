@@ -112,7 +112,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias python=python3.12
 alias doit-dir="cd ~/Github/dle-doit"
-alias doit-activate="source /Users/travis/DLE/venv/bin/activate"
+alias doit-activate="source ~/Github/dle-doit/dle-doit_venv/bin/activate"
 alias github="cd ~/Github"
 
 ## Function for swithing to course directory
